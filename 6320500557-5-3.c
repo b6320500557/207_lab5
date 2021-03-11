@@ -1,20 +1,26 @@
 #include <stdio.h>
 int main()
 {
-    int n,i;
+    int n,i,j=1,x;
     scanf("%d",&n);
-   /* for(i=1;i<=4000;i++)
+    int m[n];
+    for(i=1;;i++)
     {
         if(i%2==0 || i%3==0 || i%5==0)
         {
-            if(i==1)
-                j++;
-            else
-                j++;
+           //printf("%d ",i);
+           m[i] = i;
+            j++;
         }
         if(i == n)
             break;
     }
-    printf ("%d",i);*/
+    for(i=1; i<=j; i++)
+    {
+        printf("%d ",m[i]);
+    }
+
+    //printf("%d",j);
+
     return 0;
 }
