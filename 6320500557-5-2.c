@@ -7,13 +7,19 @@ int main()
     {
          for(i=1; i<=n/2; i++)
        {
-            for(j=1; j<n; j++)
+            for(j=n/2; j>=i; j--)
             {
-                if(i == j)
-                    printf("*");
-                else
+                if(i<j)
                     printf("_");
-
+                else
+                    printf("*");
+            }
+             for(j=i; j<n/2; j++)
+            {
+                if(i<j)
+                    printf("_");
+                else
+                    printf("*");
             }
             printf("\n");
        }
