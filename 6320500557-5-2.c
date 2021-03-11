@@ -9,17 +9,15 @@ int main()
        {
             for(j=n/2; j>=i; j--)
             {
-                if(i<j)
+                if(i < j)
                     printf("_");
                 else
                     printf("*");
             }
-             for(j=i; j<n/2; j++)
+            for(j=i; j>=1; j--)
             {
-                if(i<j)
-                    printf("_");
-                else
-                    printf("*");
+                if(j >=2 || i==n/2)
+                printf("*");
             }
             printf("\n");
        }
